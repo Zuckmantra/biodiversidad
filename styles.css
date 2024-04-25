@@ -1,0 +1,43 @@
+:root{
+        --prim-color: #effde8;
+        --green-sa: #ddf9ce;
+        --green-200: '#bdf4a2';
+        --green-300: '#94ea6c';
+        --green-400: '#66da34';
+        --seco-color: '#4ec220';
+        --green-600: '#399b15';
+        --green-700: '#2d7615';
+        --green-800: '#285d17';
+        --green-900: '#244f18';
+        --tercer-color: '#0e2c07';
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 200px;
+}
+
+.slider{    
+    width: 100%;
+    aspect-ratio: auto 3/1;
+    position: relative;
+    overflow: scroll;   
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.slider img{
+    width: 100%;
+    left: 0;
+    padding: 2px;
+    position: sticky;
+    object-fit: contain;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    display: block;
+    animation-name: slidein;
+    animation: slide linear infinite;
+    animation-direction: alternate;
+}
