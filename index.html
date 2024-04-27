@@ -3,34 +3,64 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"href="footer.css">
         <title>Biodiversidad Cundinamarca y Boyaca</title>
         <meta name="Resaltar las grandiosas maravillas que tenemos en nuestra region, para preservarlo y " content="Biodivers">
         <link rel="icon" href="https://www.colombia.co/favicon-32x32.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
+            <h1>Biodiveridad Cundinamarca y Boyaca</h1>
+        </header>git rm -rf Practicar_java/interfazGrafica/GUI
+        <main>
+            <p>Colombia esta doado por la naturaleza, en especial en la region de Cundinamarca y Boyaca, donde se encuentran los parques naturales mas importantes del pais, con una gran variedad de flora y fauna, que se encuentran en peligro de extincion, por eso es importante cuidarlos y preservarlos.</p>
 
-        </header>
-        <h1>Biodiversidad</h1>
-        <p>En esta pagina se resaltara la biodiversidad de la region de Cundinamarca y Boyaca, mostrando las maravillas que tenemos en nuestra region, para preservarlo y cuidarlo.</p>
-        <h2 id="Cundinamarca">Cundinamarca</h2>
-        <p> En Cundinamarca </p>
-        <ul>
-            <li>Parque Nacional Natural Chingaza<div></div><div class="slider"><img src="images/chingaza/nevado.jpg"><img src="images/chingaza/venado.jpg"></div></div></li>
-            <li>Parque Nacional Natural Sumapaz<div><div class="slider"><img src="images/sumapaz/frailejon.jfif"><img src="images/sumapaz/nevado.jpg"></div></div></li>
-            <li>Parque Nacional Natural Los Nevados<div><div class="slider"><img src="images/los_Nevados/ave.jpg"><img src="images/los_Nevados/nevados.jfif"></div></div></li>
-        </ul>
-        <h2 i:d="Boyaca">Boyaca</h2>
-        <p>En Boyaca tambien tenemos maravillas naturales que debemos cuidar y preservar.</p>
-        <ul>
-            <li>Parque Nacional Natural Pisba<div><div class="slider"><img src="images/pisba/pisba_bio.jfif"><img src="images/pisba/puma.jpg"></div></div></li>
-            <li>Parque Nacional Natural El Cocuy<div><div class="slider"><img src="images/cocuy/cocuy-flower.jpg"><img src="images/cocuy/cocuy.jpg"></div></div></li>
-            <li>Parque Nacional Natural Iguaque<div><div class="slider"><img src="images/iguaque/fauna.jpg"><img src="images/iguaque/Santuario-iguaque.jpg"></div></div></li>
+            <section>
+                <h3>Parques naturales principales</h3>
+                <div class="container">
+                    <div class="name-depar">
+                        <h2 class="name-depar">Cundinamarca</h2>
+                        <div class="municipio">
+                            <img src="images/chingaza/nevado.jpg">
+                            <img src="images/chingaza/venado.jpg">
+                            <img src="images/sumapaz/frailejon.jfif">
+                            <img src="images/sumapaz/nevado.jpg">
+                            <img src="images/flower.jpg">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="name-depar">
+                        <h2 class="name-depar">Boyaca</h2>
+                        <div class="municipio">
+                            
+                            <img src="images/cocuy/cocuy.jpg" alt="Parque del Cpcuy">
+                            <img src="images/iguaque/Santuario-iguaque.jpg" alt="Parque Iguaque">
+                            <img src="images/los_Nevados/ave.jpg" alt="Ave los nevados">
+                            <img src="images/cocuy/cocuy-flower.jpg" alt="FLores del cocuy">
+                            <img src="images/pisba/puma.jpg" alt="Puma en Pisba">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
     </body>
     <footer>
-        <p>Desarrollado por: <a href="www.linkedin.com/in/harold-gomez-b36327238">Harold Gomez</a></p>
+        <p class="desarrollador">Desarrollado por: <a href="www.linkedin.com/in/harold-gomez-b36327238">Harold Gomez</a></p>
+        <h4>Visitalos y Cuidalos</h4>
+        <ul>
+            <li class="li-cun"><input type="checkbox" value="1" id="1"><label for="1">Cundinamarca</label></li>
+            <iframe class="mapcun" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035678.5198865552!2d-75.29053935958936!3d4.781232617908959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f28eb1616af2b%3A0x933cbcb5fad108ed!2sCundinamarca!5e0!3m2!1ses-419!2sco!4v1713538799703!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <li class="li-boy">Boyaca</li>
+            <iframe class="mapboy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1708631.6040174346!2d-74.3412044665532!3d5.91338316336033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e69a475f890a283%3A0xffe1255b64bc9ff7!2zQm95YWPDoQ!5e0!3m2!1ses-419!2sco!4v1713539005950!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="info">Para mas, puedes visistar, encontrar y <a href="https://www.colombia.co/turismo/">visitar a Colombia</a></p>
+        </ul>
+        
     </footer>
+    <script src="scripts.js">
+        document.querySelector('h1').addEventListener;
+    </script>
 </html>

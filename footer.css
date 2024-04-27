@@ -1,0 +1,104 @@
+@import url(styles.css);
+
+footer{    
+    border: 1px;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(var(--first-color), var(--second-color));
+    display: grid;
+    gap: 20px;
+    grid-template: 
+        "contact h4 info"  
+        "contact nom1 info"
+        "contact mapcun info"
+        "contact nom2 info"
+        "contact mapboy info"
+        ;  
+    padding: 10px 15px;  
+    & > *{
+        color: var(--second-color);
+        background: transparent;
+    }
+
+    p {
+        color: var(--second-color);
+        background: transparent;
+      
+        a{
+            color: var(--second-color);
+            text-decoration: none;
+            background: transparent;
+            &:hover{
+                color: var(--second-color);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .desarrollador{
+        background: transparent;
+        grid-area: contact;
+        font-size: 1.5rem;  
+    }
+
+    h4{
+        grid-area: h4;
+        font-size: 1.5rem;
+        
+        
+    }
+   
+    .li-cun{
+        background: transparent;
+        grid-area: nom1;
+        font-size: 1.5rem;
+        &:hover ~ .mapcun{
+           height: 300px;
+           transition: 5s;
+        }
+        label{
+            background: transparent;
+        }
+    }
+
+    .li-cun + iframe{
+        background: transparent;
+        grid-area: mapcun;
+        border-radius: 20%;
+    }
+
+    .li-boy{
+        background: transparent;
+        grid-area: nom2;
+        font-size: 1.5rem;
+        &:hover ~ .mapboy{
+            height: 300px;
+            transition: 5s;
+         }
+    }
+
+    .li-boy + iframe{
+        background: transparent;
+        grid-area: mapboy;
+        border-radius: 20%;
+    }
+    .info{
+        grid-area: info;
+        font-size: 1.5rem;
+        
+    }
+
+}
+ iframe{
+    width: 400px;
+    height: 0;
+    border: none;
+    border-radius: 20%;
+ }
+ li{
+    list-style: none;
+ }
+input{
+    display: none;
+}
+
